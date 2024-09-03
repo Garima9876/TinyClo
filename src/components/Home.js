@@ -49,7 +49,7 @@ const Home = () => {
                 }}
               >
                 <div className="row px-3">
-                  <div className="col-lg-5 position-relative">
+                  <div className="col-lg-5 position-relative responsive-image">
                     <img
                       src={clothing}
                       alt="Kids Clothing"
@@ -94,7 +94,7 @@ const Home = () => {
                       Explore &gt;
                     </button>
                   </div>
-                  <div className="col-lg-5 position-relative">
+                  <div className="col-lg-5 position-relative responsive-image">
                     <img
                       src={equipments}
                       alt="Equipments"
@@ -128,7 +128,7 @@ const Home = () => {
                       Explore &gt;
                     </button>
                   </div>
-                  <div className="col-lg-4 position-relative">
+                  <div className="col-lg-4 position-relative responsive-image">
                     <img
                       src={toys}
                       alt="Toys"

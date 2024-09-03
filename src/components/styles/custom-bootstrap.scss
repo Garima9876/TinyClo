@@ -25,6 +25,12 @@ $theme-colors: (
   font-weight: 500;
 }
 
+@media (max-width: 991px) { /* Adjust breakpoint as needed */
+  .responsive-image {
+    display: none; /* Hides image on screens smaller than 992px */
+  }
+}
+
 @import "node_modules/bootstrap/scss/bootstrap";
 
 // Define CSS variable for the color with opacity
