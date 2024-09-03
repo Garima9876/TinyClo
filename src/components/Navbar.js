@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logoImage from "../components/assets/logo.png";
 
 const Navbar = () => {
   const [activeButton, setActiveButton] = useState(null);
@@ -9,10 +10,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top">
       <div className="container">
         <a className="navbar-brand" href="/">
-          <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="TinyClo Logo" width="80" height="80" />
+          <img src={logoImage} alt="TinyClo Logo" width="80" height="80" />
         </a>
         <button
           className="navbar-toggler"

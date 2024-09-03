@@ -6,6 +6,16 @@ $theme-colors: (
   "secondary": #FCEBA3,
   "unique-secondary": #FC6565,
   "home-colour": #FBFBFD,
+  "footer-colour": #1A95CF
 );
 
 @import "node_modules/bootstrap/scss/bootstrap";
+
+// Define CSS variable for the color with opacity
+:root {
+  --footer-color-opacity: rgba(26, 149, 207, 0.25); // Define the color with opacity here
+}
+
+.footer {
+  background-color: rgba(map-get($theme-colors, "footer-colour"), 0.25); // Apply opacity here
+}
