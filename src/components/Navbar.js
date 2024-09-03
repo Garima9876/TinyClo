@@ -9,10 +9,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container">
         <a className="navbar-brand" href="/">
-          <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="TinyClo Logo" />
+          <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="TinyClo Logo" width="80" height="80" />
         </a>
         <button
           className="navbar-toggler"
@@ -40,8 +40,8 @@ const Navbar = () => {
                   <button
                     className={`btn ${
                       activeButton === item
-                        ? "btn-secondary rounded-pill"
-                        : "btn"
+                        ? "btn-secondary rounded-pill fw-bold"
+                        : "btn text-muted"
                     }`}
                     onClick={() => handleClick(item)}
                   >
@@ -52,7 +52,7 @@ const Navbar = () => {
             ))}
           </ul>
           <Link to="/login" className="ms-auto">
-            <button className="btn btn-secondary ms-3">Login/Sign Up</button>
+            <button className="btn btn-secondary fw-bold px-4 ms-3">Login/Sign Up</button>
           </Link>
         </div>
       </div>
